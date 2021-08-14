@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html><head>
+    <meta charset="UTF-8">
+    <!--<title> Glassmorphism </title>-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease; 
+}
+body{
+  height: 100vh;;
+  width: 100%;
+  display: flex;
+  background: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') no-repeat center center / cover;
+}
+::selection{
+  color: #f2f2f2;
+  background: #f86d8d;
+}
+body::before,
+body::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+body::before{
+  clip-path: circle(30% at left 20%);
+  opacity: 0.4;
+  background: linear-gradient( 135deg, #c31432  10%, #240b36 100%);
+}
+body::after{
+  opacity: 0.4;
+  clip-path: circle(25% at right 80%);
+  background: linear-gradient(  135deg, #c31432  10%, #240b36 100%);
+}
+header{
+  height: 85vh;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+}
+header .navbar{
+  margin: auto;
+  width: 100%;
+  padding: 35px 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.navbar .menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar .logo a{
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 6px;
+}
+.navbar .menu a{
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbar .menu a:hover{
+  color: #f2f2f2;
+}
+.navbar .buttons input{
+  outline: none;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 6px 15px;
+  border: none;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient( 135deg, #7474bf  10%, #348ac7 100%);
+}
+.navbar .buttons input:hover{
+  transform: scale(0.97);
+}
+ header .text-content{
+   width: 40%;
+   margin: 100px 0 0 50px ;
+ }
+.text-content h2{
+  font-size: 27px;
+  font-weight: 600;
+}
+.text-content p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+header .play-button{
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+}
+.play-button .play{
+  font-size: 18px;
+  font-weight: 500;
+}
+ .play-button .play::before{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 50px;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -58px;
+   background: #000;
+ }
+.play-button i{
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  line-height: 38px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width:850px) {
+  header .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+  }
+  .navbar .menu {
+    margin: 10px 0 20px 0;
+  }
+  header .text-content{
+    margin: 30px 0 0 20px ;
+    width: 70%;
+  }
+  header .text-content h2{
+    font-size: 20px;
+  }
+}
+@media (max-width:410px) {
+  header{
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+  header .navbar{
+    padding: 15px 10px;
+}
+}
+p,h1,h2 {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+    width: 600%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.h1,h2
+{
+    color: ;
+}
+     </style>
+   </head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo"><a href="#"><font color='black'>AgitechAvids ></font></a></div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="buttons">
+          <a href='http://localhost:8383/ONLINE%20TESTING/choiceLogin.html'><input type="button" value="Login"></a>
+          <a href='http://localhost:8383/ONLINE%20TESTING/Register.html'><input type="button" value="Register"></a>
+      </div>
+    </nav>
+    <div class="text-content">
+      <h2>Formula For Success</h2>
+      <p>Would you like us to give you a formula for success? It's quite simple, really: Double your rate of failure. You are thinking of failure as the enemy of success. But it isn't at all. You can be discouraged by failure or you can learn from it, so go ahead and make mistakes. Make all you can. Because remember that's where you will find success.</p>
+    </div>
+    <div class="play-button">
+      <span class="play"></span>
+      <i class="fas fa-info-circle" onclick="click()"></i>
+    </div>
+  </header>
+
+
+</body></html>
