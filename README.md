@@ -1,1 +1,1 @@
-# Grocery its my first repository so dont judge, Bitches!!
+Its my first repository so dont judge, Bitches!!
