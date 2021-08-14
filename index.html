@@ -1,0 +1,251 @@
+<html>
+ <head> 
+  <!-- Project 101 --> 
+  <title></title> 
+  <link rel="" type="image/png"> 
+  <style>
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+form{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+    color:#ededed;
+    text-align: right;
+}
+
+.header{
+    background-color:black;
+    color:white;
+    border-color: #080808;
+    min-height: 50px;
+    border: 1px solid transparent;
+}
+
+.inner-header{
+    width:80%;
+    margin:auto;
+}
+
+.logo{
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.header-link{
+    float:right;
+    font-size:14px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size:16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.content{
+   min-height:800px;
+}
+
+.banner-image{
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(https://i.imgur.com/c3wrqp2.gif) no-repeat center;
+    background-size: 1100px;
+}
+
+.inner-banner-image{
+    padding-top: 12%;
+    width:80%;
+    margin:auto;
+}
+
+.banner_content{
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    overflow:hidden;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+    border-radius: 10px;
+}
+.button{
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #FF5000;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    -webkit-transition: all 0.5s;
+}
+.button:hover{
+    background: palevioletred;
+    color: black;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.items{
+    width: 30%;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float:left;
+    margin-left:2%;
+}
+
+.thumbnail{
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.caption{
+    color:#000;
+    padding:0px 10px 10px;
+    text-align: center;
+}
+
+.footer{
+   background-color: black;
+   color: azure;
+   font-size:14px;
+   text-align: center;
+   padding:3px;
+   margin-top:auto;
+   height:150px;
+}
+</style>
+ </head> 
+ <!--header--> 
+ <body> 
+  <div class="header"> 
+   <div class="inner-header"> 
+    <div class="logo"> 
+     <a href="#"></a> 
+    </div>  
+    <div class="header-link"> 
+     <a href="signup.php">Sign Up</a> 
+    </div> 
+    <div class="header-link"> 
+     <a href="login.php">Log In</a> 
+    </div>
+       <div class="form">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+       </div>
+   </div> 
+  </div> 
+  <!--main content--> 
+  <div class="content"> 
+   <div class="banner-image"> 
+    <div class="inner-banner-image"> 
+     <center> 
+      <div class="banner_content"> 
+       <h1>SPASH</h1> 
+       <p>Flat 15% OFF</p> 
+       <a href="newpage.php" target="_blank"> 
+        <center> 
+         <input class="button" type="button" value="Shop Now"> 
+        </center> </a> 
+      </div> 
+     </center> 
+    </div> 
+   </div> 
+  </div> 
+  <!--thumbnail--> 
+  <div class="container"> 
+   <!--1--> 
+   <div class="items"> 
+    <a href=""> <img src="https://previews.123rf.com/images/karandaev/karandaev1608/karandaev160800280/62201933-sausages-fish-meat-and-ingredients-cooking-top-view-on-stone-table.jpg" alt="Meat&Fish" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Meat & Fish</h2> 
+      <p>Meat,Luncheon Meat,Oily Fish</p> 
+     </div> </a> 
+   </div> 
+   <!--2--> 
+   <div class="items"> 
+    <a href=""> <img src="https://www.kurzweilai.net/images/CerealPlant-7-Grain-Bread-Wholegrain-Food.jpg" alt="Grains&Bread" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Grains & Bread</h2> 
+      <p>Pasta,Rice,Flour,Cereal</p> 
+     </div> </a> 
+   </div> 
+   <!--3--> 
+   <div class="items"> 
+    <a href=""> <img src="https://blog.fitbit.com/wp-content/uploads/2016/03/2016-03-22_HealthyFats_Blog_730x485.jpg" alt="Fats&Oil" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Oil & Fat</h2> 
+      <p>Cooking Oil,Butter</p> 
+     </div> </a> 
+   </div> 
+  </div> 
+  <!--4--> 
+  <div class="container"> 
+   <div class="items"> 
+    <a href="lifestyle.com/shirts"> <img src="https://media.wsimag.com/attachments/e93e9eb9c2850d7ffe69d0383ed27baf224eafd3/store/fill/690/388/35defd11ef8de6b2a0af60645188fd44f1fdcc1e7ed397421e56f58cd7c7/Eggs-milk-and-cheese.jpg " alt="Dairy&Eggs" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Dairy & Eggs</h2> 
+      <p>Milk,Eggs,Cheese,Yogurt</p> 
+     </div> </a> 
+   </div>
+  <!--5--> 
+   <div class="items"> 
+    <a href=""> <img src="https://bloximages.newyork1.vip.townnews.com/kctv5.com/content/tncms/assets/v3/editorial/0/90/0904822e-a515-52b4-818a-053c2673651a/5ba0d03f2b161.image.jpg " alt="Produce" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Produce</h2> 
+      <p>Onions,Garlic,Fruits,Vegetables</p> 
+     </div> </a> 
+   </div>
+  <!--6--> 
+   <div class="items"> 
+    <a href=""> <img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMjU3MDkwMi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY2MjU5OTkzOH0._yfb1pLG0k3JjkHWXsNx-esM9YsZ8igLZu6EZP8Sccw/img.jpg?width=1245&quality=85&coordinates=0%2C0%2C0%2C0&height=700" alt="Tinned&DriedProduce" class="thumbnail"> 
+     <div class="caption"> 
+      <h2>Tinned & Dried Produce</h2> 
+      <p>Pulses,Soup,Fruits,Seeds,Nuts</p> 
+     </div> </a> 
+   </div>
+</div> 
+  <!--footer--> 
+  <section>
+  <footer class="footer">
+    Copyright© 2020-2021| All Rights Reserved | Contact us: +91 62918 44259 
+  </footer> 
+</section>
+ </body>
+</html>
+
