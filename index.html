@@ -1,251 +1,124 @@
-<html>
- <head> 
-  <!-- Project 101 --> 
-  <title></title> 
-  <link rel="" type="image/png"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By Ashwin Ray -->
+  <title>Theme-Simply Me</title>
+  <me<ta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-}
-
-form{
-  float: left;
-  width: 20%;
-  padding: 10px;
-  color: white;
-  font-size: 16px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-
-a{
-    text-decoration: none;
-    background-color: black;
-    color:#ededed;
-    text-align: right;
-}
-
-.header{
-    background-color:black;
-    color:white;
-    border-color: #080808;
-    min-height: 50px;
-    border: 1px solid transparent;
-}
-
-.inner-header{
-    width:80%;
-    margin:auto;
-}
-
-.logo{
-    float: left;
-    height: 50px;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.header-link{
-    float:right;
-    font-size:14px;
-    height: 50px;
-    padding: 15px 15px;
-    font-size:16px;
-    font-weight: bold;
-    text-align: right;
-}
-
-.content{
-   min-height:800px;
-}
-
-.banner-image{
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(https://i.imgur.com/c3wrqp2.gif) no-repeat center;
-    background-size: 1100px;
-}
-
-.inner-banner-image{
-    padding-top: 12%;
-    width:80%;
-    margin:auto;
-}
-
-.banner_content{
-    position: relative;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    overflow:hidden;
-    margin-bottom: 12%;
-    background-color: rgba(0, 0, 0, 0.7);
-    max-width: 660px;
-    border-radius: 10px;
-}
-.button{
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
     color: #fff;
-    background-color: #c9302c;
-    border-color: #FF5000;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    padding: 10px 16px;
-    font-size: 18px;
-    border-radius: 6px;
-    -webkit-transition: all 0.5s;
-}
-.button:hover{
-    background: palevioletred;
-    color: black;
-}
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body data-spy='scroll' data-target='.navbar' data-offset='50'>
 
-.container{
-    width:90%;
-    margin:auto;
-    overflow:hidden;
-}
-
-.items{
-    width: 30%;
-    display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    float:left;
-    margin-left:2%;
-}
-
-.thumbnail{
-    display: block;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto 0 auto;
-}
-
-.caption{
-    color:#000;
-    padding:0px 10px 10px;
-    text-align: center;
-}
-
-.footer{
-   background-color: black;
-   color: azure;
-   font-size:14px;
-   text-align: center;
-   padding:3px;
-   margin-top:auto;
-   height:150px;
-}
-</style>
- </head> 
- <!--header--> 
- <body> 
-  <div class="header"> 
-   <div class="inner-header"> 
-    <div class="logo"> 
-     <a href="#"></a> 
-    </div>  
-    <div class="header-link"> 
-     <a href="signup.php">Sign Up</a> 
-    </div> 
-    <div class="header-link"> 
-     <a href="login.php">Log In</a> 
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Simply Me</a>
     </div>
-       <div class="form">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section1">WHO</a></li>
+        <li><a href="#section2">WHAT</a></li>
+        <li><a href="#section3">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<!-- The form -->
-<form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-       </div>
-   </div> 
-  </div> 
-  <!--main content--> 
-  <div class="content"> 
-   <div class="banner-image"> 
-    <div class="inner-banner-image"> 
-     <center> 
-      <div class="banner_content"> 
-       <h1>SPASH</h1> 
-       <p>Flat 15% OFF</p> 
-       <a href="newpage.php" target="_blank"> 
-        <center> 
-         <input class="button" type="button" value="Shop Now"> 
-        </center> </a> 
-      </div> 
-     </center> 
-    </div> 
-   </div> 
-  </div> 
-  <!--thumbnail--> 
-  <div class="container"> 
-   <!--1--> 
-   <div class="items"> 
-    <a href=""> <img src="https://previews.123rf.com/images/karandaev/karandaev1608/karandaev160800280/62201933-sausages-fish-meat-and-ingredients-cooking-top-view-on-stone-table.jpg" alt="Meat&Fish" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Meat & Fish</h2> 
-      <p>Meat,Luncheon Meat,Oily Fish</p> 
-     </div> </a> 
-   </div> 
-   <!--2--> 
-   <div class="items"> 
-    <a href=""> <img src="https://www.kurzweilai.net/images/CerealPlant-7-Grain-Bread-Wholegrain-Food.jpg" alt="Grains&Bread" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Grains & Bread</h2> 
-      <p>Pasta,Rice,Flour,Cereal</p> 
-     </div> </a> 
-   </div> 
-   <!--3--> 
-   <div class="items"> 
-    <a href=""> <img src="https://blog.fitbit.com/wp-content/uploads/2016/03/2016-03-22_HealthyFats_Blog_730x485.jpg" alt="Fats&Oil" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Oil & Fat</h2> 
-      <p>Cooking Oil,Butter</p> 
-     </div> </a> 
-   </div> 
-  </div> 
-  <!--4--> 
-  <div class="container"> 
-   <div class="items"> 
-    <a href="lifestyle.com/shirts"> <img src="https://media.wsimag.com/attachments/e93e9eb9c2850d7ffe69d0383ed27baf224eafd3/store/fill/690/388/35defd11ef8de6b2a0af60645188fd44f1fdcc1e7ed397421e56f58cd7c7/Eggs-milk-and-cheese.jpg " alt="Dairy&Eggs" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Dairy & Eggs</h2> 
-      <p>Milk,Eggs,Cheese,Yogurt</p> 
-     </div> </a> 
-   </div>
-  <!--5--> 
-   <div class="items"> 
-    <a href=""> <img src="https://bloximages.newyork1.vip.townnews.com/kctv5.com/content/tncms/assets/v3/editorial/0/90/0904822e-a515-52b4-818a-053c2673651a/5ba0d03f2b161.image.jpg " alt="Produce" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Produce</h2> 
-      <p>Onions,Garlic,Fruits,Vegetables</p> 
-     </div> </a> 
-   </div>
-  <!--6--> 
-   <div class="items"> 
-    <a href=""> <img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMjU3MDkwMi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY2MjU5OTkzOH0._yfb1pLG0k3JjkHWXsNx-esM9YsZ8igLZu6EZP8Sccw/img.jpg?width=1245&quality=85&coordinates=0%2C0%2C0%2C0&height=700" alt="Tinned&DriedProduce" class="thumbnail"> 
-     <div class="caption"> 
-      <h2>Tinned & Dried Produce</h2> 
-      <p>Pulses,Soup,Fruits,Seeds,Nuts</p> 
-     </div> </a> 
-   </div>
-</div> 
-  <!--footer--> 
-  <section>
-  <footer class="footer">
-    Copyright© 2020-2021| All Rights Reserved | Contact us: +91 62918 44259 
-  </footer> 
-</section>
- </body>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="section1">
+  <h3 class="margin">Who Am I ?</h3>
+  <img src="https://images.unsplash.com/photo-1630750059267-d07e5b8c3ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>I am Ashwin Ray</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="section2">
+  <h3 class="margin">What Am I?</h3>
+  <p> See for yourself</p>
+  <a href="https://g.co/kgs/EC66ph" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="section3">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>FACEBOOK</p>
+      <a href="https://www.facebook.com/ashwin.ray.180">
+      <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
+      </div>
+    <div class="col-sm-4"> 
+      <p>INSTAGRAM</p>
+      <a href="https://www.instagram.com/ashray.99/">
+      <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
+      </div>
+    <div class="col-sm-4"> 
+      <p>LINKEDIN</p>
+      <a href="https://www.linkedin.com/in/ashray10">
+      <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>A Bootstrap Theme Made By Ashwin Ray</p> 
+</footer>
+
+</body>
 </html>
-
